@@ -1,0 +1,111 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f0eb, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CARD */
+.thank-you-container {
+    background: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease;
+}
+
+/* CHECK ICON */
+.check-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #28a745;
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITLE */
+.thank-you-container h1 {
+    font-size: 2.5rem;
+    color: #1a2a46;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+.thank-you-container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.home-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: #c09f80;
+    color: #1a2a46;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #1a2a46;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .thank-you-container {
+        padding: 35px 25px;
+    }
+
+    .thank-you-container h1 {
+        font-size: 2rem;
+    }
+
+    .thank-you-container p {
+        font-size: 1rem;
+    }
+
+    .home-btn {
+        width: 100%;
+    }
+}

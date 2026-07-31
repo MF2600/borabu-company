@@ -88,9 +88,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-
 .logo {
     font-family: 'Playfair Display', serif;
     font-size: 1.8em;
@@ -98,6 +97,24 @@ header {
     color: var(--secondary-color);
     text-decoration: none;
     padding-left: 10px;
+}
+.logo a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.logo span{
+    font-size:2rem;
+    font-weight:700;
+    color:#d4b28a;
 }
 
 .nav-links {
@@ -169,6 +186,7 @@ header {
     flex-wrap: wrap;
 }
 
+
 .hero-content {
     flex: 1;
     min-width: 300px;
@@ -208,21 +226,32 @@ header {
 }
 /*right side of the hero section*/
 
-.hero-image {
-    position: absolute;
-    top: 0;
-    right: 0;
+.hero-image { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
     bottom: 0;
-    width: 50%;
-}
+     width: 50%; 
+     overflow: hidden; 
+    }
+
 
 .hero-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
-    max-width: 600px;
     height: 80%;
     object-fit: cover;
+
     border-bottom-left-radius: 100px;
-    display: block;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.hero-image img.active {
+    opacity: 1;
 }
 
 
@@ -1119,4 +1148,431 @@ background:#1d1f75;
     white-space: nowrap;
     transition: 0.3s ease;
 }
+.page-hero{
+    background:linear-gradient(rgba(44, 154, 150, 0.75),rgba(15,30,70,.75));
+    color:white;
+    text-align:center;
+    padding:50px 10px;
+}
+
+.page-hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.projects-section{
+    padding:80px 20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:20px;
+    color:#1a2a46;
+}
+
+.project-card p{
+    padding:0 20px 25px;
+    line-height:1.7;
+}
+
+.cta{
+    background:#4d6ba3;
+    text-align:center;
+    padding:70px 20px;
+    color:#fff;
+    padding:  50px;
+    
+}
+.cta p{
+    margin-bottom: 30px;
+}
+
+/* ===========================
+   TESTIMONIALS PAGE
+=========================== */
+
+.page-header {
+    background: linear-gradient(rgba(44, 154, 150, 0.75),rgba(15,30,70,.75));
+    color: white;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Section */
+
+.testimonials-section {
+    padding: 80px 10%;
+    background: var(--secondary-color);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.3rem;
+    color: #1a2a46;
+}
+
+.section-title p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Grid */
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.testimonial-card::before {
+    content: "❝";
+    font-size: 4rem;
+    color: #c9a227;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: .25;
+}
+
+.stars {
+    color: #f4b400;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.testimonial-card h3 {
+    color: #1a2a46;
+    margin-bottom: 5px;
+}
+
+.testimonial-card span {
+    color: #888;
+    font-size: .95rem;
+}
+
+/* Why Choose Us */
+
+.why-choose {
+    padding: 80px 10%;
+    background: #fff;
+}
+
+.why-choose h2 {
+    text-align: center;
+    color: #1a2a46;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+.feature {
+    background: #f8f9fa;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.feature:hover {
+    background: #1a2a46;
+    color: white;
+}
+
+/* CTA */
+
+.cta {
+    background: #1a2a46;
+    color: white;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.cta .btn {
+    display: inline-block;
+    background: #c9a227;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.cta .btn:hover {
+    background: #a67c00;
+}
+
+/* Responsive */
+
+@media (max-width:768px) {
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-card {
+        padding: 25px;
+    }
+
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+}
+/*=========================
+CONTACT PAGE
+=========================*/
+
+.contact-section{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:50px;
+}
+
+.contact-info h2,
+.contact-form h2{
+    color:#1a2a46;
+    margin-bottom:30px;
+}
+
+.info-box{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.info-box i{
+    width:60px;
+    height:60px;
+    background:#c9a227;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+
+.info-box h4{
+    margin-bottom:5px;
+    color:#1a2a46;
+}
+
+.info-box p{
+    color:#555;
+    line-height:1.6;
+}
+
+.contact-form{
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:16px;
+    outline:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#c9a227;
+}
+
+.contact-form button{
+    background:#1a2a46;
+    color:#fff;
+    padding:15px;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#c9a227;
+}
+
+.map-section{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.map-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1a2a46;
+}
+
+.map-section iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:10px;
+}
+
+@media(max-width:768px){
+
+.contact-section{
+grid-template-columns:1fr;
+}
+
+.contact-form{
+padding:25px;
+}
+
+}
+.whatsapp-btn{
+    margin-top:25px;
+    text-align:center;
+}
+
+.whatsapp-btn a{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:15px 35px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.whatsapp-btn a:hover{
+    background:#1ea952;
+}
+
+.whatsapp-btn i{
+    margin-right:10px;
+}
+.social-links{
+    margin-top:40px;
+}
+
+.social-links h3{
+    margin-bottom:20px;
+    color:#1a2a46;
+}
+
+.social-links a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#1a2a46;
+    color:white;
+    margin-right:12px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#c9a227;
+}
+
+
+
+
+
 

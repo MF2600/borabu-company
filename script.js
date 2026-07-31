@@ -11,3 +11,14 @@ document.addEventListener("DOMContentLoaded",() => {gsap.registerPlugin(SplitTex
         opacity: 0,
     })
 })
+const slides = document.querySelectorAll(".hero-image .slide");
+
+let currentSlide = 0;
+
+setInterval(() => {
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+}, 4000);
