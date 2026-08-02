@@ -112,7 +112,7 @@ header {
 }
 
 .logo span{
-    font-size:2rem;
+    font-size:2.0rem;
     font-weight:700;
     color:#d4b28a;
 }
@@ -706,6 +706,10 @@ footer {
         margin-bottom: 40px;
         order: 2;
 
+
+    }
+    .hero-content h1{
+        font-size: smaller;
     }
     .hero-content p{
         max-width: 100%;
@@ -730,6 +734,7 @@ footer {
     .google-review-card{
         max-width: none;
         flex-basis: calc(50%-20px);
+    }
     }
 
 
@@ -770,24 +775,29 @@ footer {
     .footer-grid{
         text-align: center;
     }
+    
 }
+
 /*Small Mobile style*/
-@media (max-width: 480px){
+@media (max-width:480px){
     .top-bar{
         display: none;
 
     }
     .hero-content h1{
-        font-size: 1em;
+        font-size: 2.2em;
     }
     .hero-content p{
         font-size: 1em;
     }
-    .logo span{
-        font-size: 1em;
     .hero-button{
         font-size: 1em;
         padding: 12px 25px;
+    }
+    .hero-content h1{
+        font-size: 1.0em;
+    
+    
     }
     .hero-image{
         height: 300px;
@@ -795,6 +805,7 @@ footer {
     .hero-image img{
         border-top-left-radius: 80px;
         border-top-right-radius: 80px;
+    
     }
     .about-section h2
     .why-choose-us h2
@@ -803,7 +814,8 @@ footer {
     .cta-section h2{
         font-size: 1.8em;
     }
-}   
+} 
+/*quote page*/  
 .quote-hero{
     background:#1d1f75;
     color:white;
@@ -1575,4 +1587,4 @@ padding:25px;
     background:#c9a227;
 }
 
-}
+
