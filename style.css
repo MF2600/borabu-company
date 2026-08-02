@@ -112,7 +112,7 @@ header {
 }
 
 .logo span{
-    font-size:2.0rem;
+    font-size:1.2em;
     font-weight:700;
     color:#d4b28a;
 }
@@ -708,6 +708,9 @@ footer {
 
 
     }
+     .logo span{
+        font-size: 1.5em;
+    }
     .hero-content h1{
         font-size: smaller;
     }
@@ -750,9 +753,12 @@ footer {
 
     }
     .top-contact-info span{
-        display: block;
+        display: none;
         margin: 5px 0;
 
+    }
+     .logo span{
+        font-size: 1.5em;
     }
     .hero-content h1{
         font-size: 2.8 em;
@@ -784,23 +790,46 @@ footer {
         display: none;
 
     }
-    .hero-content h1{
-        font-size: 2.2em;
+
+
+    .logo img{
+        width: 50px;
+        height: auto;
     }
+
+    .logo span{
+        font-size: 1.2rem;
+    }
+    .hero-content{
+        margin-bottom: 0px;
+    }
+
+
+    
+    
     .hero-content p{
         font-size: 1em;
+        margin-bottom: 15px;
+        line-height: 1.5;
     }
     .hero-button{
         font-size: 1em;
         padding: 12px 25px;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
     .hero-content h1{
         font-size: 1.0em;
+        margin-bottom: 10px;
     
     
     }
+   
+    
     .hero-image{
-        height: 300px;
+        height: 260px;
+        margin-top: 10px;
+
     }
     .hero-image img{
         border-top-left-radius: 80px;
@@ -814,7 +843,10 @@ footer {
     .cta-section h2{
         font-size: 1.8em;
     }
-} 
+}
+    
+
+
 /*quote page*/  
 .quote-hero{
     background:#1d1f75;
@@ -1049,6 +1081,7 @@ textarea{
     margin-bottom:15px;
 }
 }
+
 .active {
     color: #d4af37;
     font-weight: bold;
@@ -1533,10 +1566,10 @@ grid-template-columns:1fr;
 }
 
 .contact-form{
-padding:25px;
+padding:25px;}
 }
 
-}
+
 .whatsapp-btn{
     margin-top:25px;
     text-align:center;
