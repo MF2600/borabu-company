@@ -1001,6 +1001,8 @@ textarea{
     margin-bottom:20px;
 }
 
+    
+
 .mission-vision{
     display:grid;
     grid-template-columns:repeat(2,1fr);
