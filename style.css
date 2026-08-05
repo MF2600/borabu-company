@@ -1000,6 +1000,22 @@ textarea{
     line-height:1.8;
     margin-bottom:20px;
 }
+.history-company{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.history-company h2{
+    font-size:40px;
+    color:#1d1f75;
+    margin-bottom:20px;
+}
+
+.history-company p{
+    line-height:1.8;
+    text-align:justify;
+}
 
     
 
