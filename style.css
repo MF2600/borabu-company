@@ -1717,32 +1717,6 @@ padding:25px;}
     text-decoration: underline;
 }
 
-/* Mobile */
 
-@media (max-width: 768px) {
-
-    .page-header {
-        padding: 70px 20px;
-    }
-
-    .page-header h1 {
-        font-size: 2.2rem;
-    }
-
-    .container {
-        width: 90%;
-        margin: 40px auto;
-        padding: 25px;
-    }
-
-    .container h2 {
-        font-size: 1.7rem;
-    }
-
-    .container h3 {
-        font-size: 1.3rem;
-    }
-
-}
 
 
