@@ -794,6 +794,10 @@ footer {
         display: none;
 
     }
+      .nav-button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
 
 
     .logo img{
