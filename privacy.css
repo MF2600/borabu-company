@@ -1,0 +1,53 @@
+.page-header {
+    background: #1d2088;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+.container h2 {
+    color: #c7a27a;
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    color: #1d2088;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container p,
+.container li {
+    color: #444;
+}
+
+.container ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
