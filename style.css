@@ -1649,5 +1649,100 @@ padding:25px;}
 .social-links a:hover{
     background:#c9a227;
 }
+    /* Privacy Policy Page*/
+
+.page-header {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url("images/construction-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Privacy Policy Container */
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.8;
+}
+
+.container h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.container h3 {
+    color: #f4b400;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.container p {
+    color: #555;
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+
+.container ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.container li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.container a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container a:hover {
+    color: #f4b400;
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .page-header {
+        padding: 70px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        width: 90%;
+        margin: 40px auto;
+        padding: 25px;
+    }
+
+    .container h2 {
+        font-size: 1.7rem;
+    }
+
+    .container h3 {
+        font-size: 1.3rem;
+    }
+
+}
 
 
